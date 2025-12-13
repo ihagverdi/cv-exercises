@@ -25,6 +25,7 @@ def main():
     # check if matrices are close, they are not equal due to numerical inaccuracies
     np.testing.assert_allclose(A, A_, err_msg=f"Matrices are not equal: {A} and {A_}.")
 
+    
     # get the 2 eigenvectors from the columns of the eigenvector matrix
     print("---------- Check orthonormality of the eigenvectors.")
     vec1, vec2 = V[:, 0], V[:, 1]
